@@ -61,6 +61,15 @@ Excel.prototype.readFile = function (fileName, read_opts) {
   }
 };
 
+Excel.prototype.read = function (file, read_opts) {
+  if (this.fileType === 'xlsx') {
+    return XLSX.read(file, read_opts);
+  }
+  else if (this.fileType == 'xls') {
+    return XLS.read(file, read_opts);
+  }
+};
+
 var Workbook = function (fileType) {
   this.fileType = fileType;
 
