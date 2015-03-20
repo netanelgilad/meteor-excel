@@ -1,7 +1,7 @@
 meteor-excel
 ============
 
-Pasring and generating excel files (xlsx, xls).
+Parsing and generating excel files (xlsx, xls).
 
 This package uses the npm packages:
 * [SheetJS/js-xlsx](https://github.com/SheetJS/js-xlsx)
