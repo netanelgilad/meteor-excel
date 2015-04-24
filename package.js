@@ -12,6 +12,10 @@ Npm.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('0.9.0.1');
+
+  api.addFiles('lib/utils.js', 'server');
+  api.addFiles('lib/workbook.js', 'server');
+  api.addFiles('lib/worksheet.js', 'server');
   api.addFiles('netanelgilad:excel.js', 'server');
 
   api.export('Excel');
