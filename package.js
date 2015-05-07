@@ -1,7 +1,7 @@
 Package.describe({
   name: 'netanelgilad:excel',
   summary: 'Parse excel worksheets for your meteor app.',
-  version: '0.2.2',
+  version: '0.2.3',
   git: 'https://github.com/netanelgilad/meteor-excel'
 });
 
