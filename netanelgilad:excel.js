@@ -14,7 +14,7 @@ Excel.prototype.readFile = function (fileName, read_opts) {
   if (this.fileType === 'xlsx') {
     return XLSX.readFile(fileName, read_opts);
   }
-  else if (this.fileType == 'xls') {
+  else if (this.fileType === 'xls') {
     return XLS.readFile(fileName, read_opts);
   }
 };
@@ -23,8 +23,14 @@ Excel.prototype.read = function (file, read_opts) {
   if (this.fileType === 'xlsx') {
     return XLSX.read(file, read_opts);
   }
-  else if (this.fileType == 'xls') {
+  else if (this.fileType === 'xls') {
     return XLS.read(file, read_opts);
+  }
+};
+
+Excel.prototype.writeFile = function (wb, write_path) {
+  if (this.fileType === 'xlsx' || this.fileType === 'xls') {
+    return XLSX.writeFile(wb, write_path);
   }
 };
 
