@@ -1,13 +1,13 @@
 Package.describe({
   name: 'netanelgilad:excel',
   summary: 'Parse excel worksheets for your meteor app.',
-  version: '0.2.3',
+  version: '0.2.4',
   git: 'https://github.com/netanelgilad/meteor-excel'
 });
 
 Npm.depends({
-  'xlsx' : '0.7.11',
-  'xlsjs' : '0.7.1'
+  'xlsx' : '0.8.0',
+  'xlsjs' : '0.7.5'
 });
 
 Package.onUse(function(api) {
