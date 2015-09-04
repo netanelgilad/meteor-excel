@@ -71,6 +71,10 @@ var options = { header : 1 }
 // Or you  can get an object with column headers as keys.  
 var options = { header : ['title', 'fName', 'sName' ,'address' ] }
 
+// If options is empty or omitted, it should use the first-row headers by default. 
+// However this doesn't seem to work with all Excel worksheets. 
+var options = {}
+
 // Generate the JSON like so:
 var workbookJson = excel.utils.sheet_to_json( sheet, options );
 ```
