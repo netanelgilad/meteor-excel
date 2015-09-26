@@ -62,8 +62,21 @@ console.log("Get Some Cell from it: " + workbook.Sheets[yourSheetsName[0]][
 * Make a JSON out of your excel
 
 ```javascript
-var workbookJson = excel.utils.sheet_to_json(workbook.Sheets[yourSheetsName[0]]);
-console.log("Get the length: " + workbookJson.length);
+// We want JSON for this sheet:
+var sheet = workbook.Sheets[yourSheetsName[0]]
+
+// You can get the sheet as list of lists.
+var options = { header : 1 }
+
+// Or you  can get an object with column headers as keys.  
+var options = { header : ['title', 'fName', 'sName' ,'address' ] }
+
+// If options is empty or omitted, it should use the first-row headers by default. 
+// However this doesn't seem to work with all Excel worksheets. 
+var options = {}
+
+// Generate the JSON like so:
+var workbookJson = excel.utils.sheet_to_json( sheet, options );
 ```
 
 * Make a CSV out of your excel
