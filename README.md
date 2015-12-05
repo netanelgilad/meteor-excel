@@ -1,7 +1,7 @@
 meteor-excel
 ============
 
-___Mainly this package is a wrap for the npm packages listed above. So checkout their documentation to see how to work with excel files properly.___
+___Mainly this package is a wrap for the npm packages listed below. So checkout their documentation to see how to work with excel files properly.___
 
 Parsing and generating excel files (xlsx, xls).
 
