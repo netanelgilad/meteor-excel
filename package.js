@@ -1,7 +1,7 @@
 Package.describe({
   name: 'netanelgilad:excel',
   summary: 'Parse excel worksheets for your meteor app.',
-  version: '0.2.5',
+  version: '0.2.6',
   git: 'https://github.com/netanelgilad/meteor-excel'
 });
 
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
   api.addFiles('lib/utils.js', 'server');
   api.addFiles('lib/workbook.js', 'server');
   api.addFiles('lib/worksheet.js', 'server');
-  api.addFiles('netanelgilad:excel.js', 'server');
+  api.addFiles('excel.js', 'server');
 
   api.export('Excel');
 });
@@ -24,5 +24,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('netanelgilad:excel');
-  api.addFiles('netanelgilad:excel-tests.js');
+  api.addFiles('excel-tests.js');
 });
